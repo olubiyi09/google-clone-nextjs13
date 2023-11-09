@@ -9,12 +9,12 @@ import SearchHeaderOptions from './SearchHeaderOptions'
 const SearchHeader = () => {
     return (
         <header className='sticky top-0 bg-white'>
-            <div className="flex w-full p-6 items-center justify-between">
+            <div className="flex w-full p-8 items-center justify-between">
                 <Link href="/">
                     <Image
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
-                        width="120"
-                        height="40"
+                        width="110"
+                        height="10"
                         alt='logo'
                     />
                 </Link>
