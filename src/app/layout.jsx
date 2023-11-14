@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 
-      <body>
+      <body className="relative min-h-screen">
         {children}
         {/* Footer */}
         <Footer />
