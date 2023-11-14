@@ -3,9 +3,10 @@ import Link from "next/link"
 
 
 const ImageSearchPage = async ({ searchParams }) => {
+    const startIndex = searchParams.start || "1"
     await new Promise((resolve) => setTimeout(resolve, 10000))
     const response = await fetch(
-        `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`
+        `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`
     )
 
     if (!response.ok) {
